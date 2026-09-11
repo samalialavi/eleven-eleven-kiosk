@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="shaftA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(232,215,160,0)"/>
+      <stop offset="18%" stop-color="rgba(232,215,160,0.16)"/>
+      <stop offset="100%" stop-color="rgba(232,215,160,0)"/>
+    </linearGradient>
+    <linearGradient id="shaftB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(201,164,76,0)"/>
+      <stop offset="30%" stop-color="rgba(201,164,76,0.11)"/>
+      <stop offset="100%" stop-color="rgba(201,164,76,0)"/>
+    </linearGradient>
+    <filter id="blurShaft">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <g filter="url(#blurShaft)" opacity="0.85">
+    <polygon points="780,-40 860,-40 910,1180 700,1180" fill="url(#shaftA)"/>
+    <polygon points="980,-80 1036,-80 1120,1200 920,1200" fill="url(#shaftB)"/>
+    <polygon points="620,-20 668,-20 610,1200 520,1200" fill="url(#shaftB)" opacity="0.7"/>
+    <polygon points="1180,0 1228,0 1320,1200 1210,1200" fill="url(#shaftA)" opacity="0.55"/>
+  </g>
+</svg>
